@@ -49,7 +49,7 @@ router
 const users = [{name: "Abdullah"}, {name: "Asadullah"}]
 router.param("id", (req, res, next, id) => {
 	// console.log(id)
-	req.name = users[id]
+	req.name = users[id].name
 	next()
 })
 
